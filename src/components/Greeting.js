@@ -16,7 +16,10 @@ const Greeting = () => {
     <div>
       <input type="text" value={name} onChange={handleNameChange} placeholder="Enter your name" />
       <button onClick={handleGreeting}>Greet</button>
-      {greeting && <p>{greeting}</p>}
+      {
+      greeting && 
+      <p>{greeting}</p>
+      }
     </div>
   );
 };
